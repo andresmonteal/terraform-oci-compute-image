@@ -16,8 +16,10 @@ resource "oci_core_image" "main" {
   compartment_id = local.compartment_id
 
   #Optional
-  display_name = var.display_name
-  launch_mode  = var.launch_mode
+  display_name  = var.display_name
+  launch_mode   = var.launch_mode
+  freeform_tags = local.merged_freeform_tags
+  defined_tags  = var.defined_tags
 
   image_source_details {
     source_type    = var.source_type

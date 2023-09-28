@@ -26,7 +26,7 @@ variable "display_name" {
 variable "launch_mode" {
   description = " (Optional) Specifies the configuration mode for launching virtual machine (VM) instances. The configuration modes are: NATIVE, EMULATED, PARAVIRTUALIZED, CUSTOM"
   type        = string
-  default     = ""
+  default     = "NATIVE"
 }
 
 variable "source_type" {
