@@ -30,7 +30,7 @@ resource "oci_core_image" "main" {
     #Optional
     operating_system         = var.operating_system
     operating_system_version = var.operating_system_version
-    source_image_type        = var.source_image_type
+    #source_image_type        = var.source_image_type
   }
   timeouts {
     create = "2h"
